@@ -15,10 +15,8 @@ J = 0;
 
 % Matrix x (m by 2) times theta (2 by 1) returns an m * 1 matrix. \
 % Subtract all y values from this result and square y to  
-a = X*theta - y;
-b = a'*a;
-  
-J = b/(2*m);
+a = X*theta - y;  
+J = a'*a/(2*m);
   
 
 
